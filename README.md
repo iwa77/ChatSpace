@@ -4,23 +4,23 @@
 
 |Column|Type|Options|  
 |:--------|:------|:------------------------|  
-|name     |string |null: false, unique: true|
+|name     |string |null: false, unique: true,  index: true|
 
 ## assosiation
 has_many: comments  
 has_many: groups  
-throuth: users_groups  
+through: user_groups  
 
 ## groups table  
 
 |Column|Type|Options|  
 |:--------|:------|:------------------------|  
-|name     |string |null: false, unique: true|
+|name     |string |null: false, unique: true, index: true|
 
 ## assosiation
 has_many: comments  
 has_many: users  
-throuth: users_groups  
+through: user_groups  
 
 ## comments table  
 
@@ -35,7 +35,7 @@ throuth: users_groups
 belongs_to: users  
 belongs_to: groups  
  
-## users_groups table  
+## user_groups table  
 
 |Column|Type|Options|  
 |:--------|:------|:----------|  
