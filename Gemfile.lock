@@ -171,7 +171,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   erb2haml
-  haml-rails (~> 0.9)
+  haml-rails
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (>= 0.3.13, < 0.5)
