@@ -1,5 +1,6 @@
 
-$colorname: #000
+$colorname:#000;
+
 
 /*!
  * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
@@ -12,7 +13,7 @@ $colorname: #000
     TODO with the prefix, should I group by selector or property for weight savings?
 */
 html{
-    color: $colorname;
+    color:$colorname;
     background:#FFF;
 }
 /*
@@ -123,7 +124,7 @@ select {
 }
 /*because legend doesn't inherit in IE */
 legend {
-    color: $colorname;
+    color:$colorname;
 }
 /* YUI CSS Detection Stamp */
 #yui3-css-stamp.cssreset { display: none; }

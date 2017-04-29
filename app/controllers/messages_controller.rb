@@ -1,6 +1,2 @@
-class MessagesControllerController < ApplicationController
-
- def index　  
- end
-
+class MessagesController < ApplicationController
 end
