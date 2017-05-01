@@ -5,7 +5,7 @@
   height: 100vh;
 
   &__user{
-    height: 15%;
+    height: 15vh;
     background: #253141;
 
     h1{
@@ -29,14 +29,12 @@
     color: $base-color;
 
     .group-name{
-      margin:20px 20px 5px 20px;
+      margin: 20px 20px 5px 20px;
       font-size: 15px;
     }
     .group-message{
       margin:0 20px 20px 20px ;
       font-size: 11px;
     }
-
   }
-
 }
