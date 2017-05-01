@@ -35,18 +35,18 @@
   .chat-main__content{
     padding: 46px 40px 0 40px;
  
-    .chat-main__content__name{
+    &__name{
       font-size: 16px;
       display: inline-block; 
       margin-right: 10px;  
       color: #434a54; 
     }
-    .chat-main__content__create-time{
+    &__create-time{
       font-size: 12px;
       display: inline-block;
       color: #434a54;
     }
-    .chat-main__content__message{
+    &__message{
       padding-bottom: 40px;
       font-size: 14px;
       display: block;
