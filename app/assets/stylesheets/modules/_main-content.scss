@@ -1,12 +1,10 @@
-@import "./modules/chat-variable";
-
 .chat-main{
   background-color: #fafafa;
   width: calc(100vw - 300px);
   float: right;
   height:100vh;
 
-  .chat-main__header{
+  &__header{
     width: calc(100vw - 300px);
     background-color: $base-color;
     border-bottom: solid #eeeeee;
@@ -31,9 +29,10 @@
       background-color: $base-color;    
       border-color: $accent-color;
     }
+    
   }
 
-  .chat-main__content{
+  &__content{
     padding: 46px 40px 0 40px;
  
     &__name{
@@ -55,8 +54,7 @@
 
    }
 
-
-  .chat-main__input{
+  &__input{
     background-color: #aaaaaa;
     padding: 20px 40px;
     position: fixed;
