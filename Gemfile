@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem "font-awesome-rails"
 
 group :development, :test do 
   gem 'byebug'
@@ -20,7 +20,6 @@ group :development do
   gem 'spring'
   gem "haml-rails"
   gem 'erb2haml'
-  gem "font-awesome-rails"
 end
 
 

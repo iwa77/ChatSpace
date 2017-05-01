@@ -1,4 +1,4 @@
-$base-color: #ffffff; 
+@import "./modules/chat-variable";
 
 .chat-content{
   float: left;
@@ -16,21 +16,19 @@ $base-color: #ffffff;
       color: $base-color;
       padding: 51px 0 0 20px;
       display: inline-block;
-      
     }
 
-    &-icon1{
+    &_first-icon{
       color: $base-color;
       margin: 0 10px;
     }
-    &-icon2{
+    &_second-icon{
       color: $base-color;
     }
   }
 
   &__group{
     color: $base-color;
-
 
     .group-name{
       margin:20px 20px 5px 20px;
@@ -40,5 +38,7 @@ $base-color: #ffffff;
       margin:0 20px 20px 20px ;
       font-size: 11px;
     }
+
   }
+
 }

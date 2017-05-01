@@ -1,10 +1,20 @@
+@import "./modules/chat-variable";
+
 .top-content{
-  background-color: #38aef0;
+  background-color: $accent-color;
   width: 100%;
   position: fixed;
-}
+  
+
   p{
-    color: #ffffff;
+    color: $base-color;
     text-align: center;
   }
+
+}
+
+
+
+
+  
   
