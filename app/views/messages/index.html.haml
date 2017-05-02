@@ -1,0 +1,33 @@
+.chat-content
+  .chat-content__user
+    %h1 鈴木イチロー
+    %a.chat-content__user_first-icon
+      %i.fa.fa-pencil-square-o
+    %a.chat-content__user_second-icon
+      %i.fa.fa-cog
+
+  .chat-content__group
+    %ul
+      %li
+        .group-name
+          グループA
+        .group-message
+          発言1
+      
+.chat-main
+  .chat-main__header
+    %h1 全日本選抜
+    %h2 落合、野茂
+    %input.edit-btn{ type: :submit, value: "Edit" }
+  .chat-main__content
+    .message
+      .chat-main__content__name
+        中田英寿
+      .chat-main__content__create-time
+        2017/1/1 11:11:11
+      .chat-main__content__message
+        サッカーサッカーサッカー 
+  .chat-main__input
+    %input.message-box{ type: :text }
+    %i.fa.fa-picture-o
+    %input.send-btn{ type: :submit, value: "send" }

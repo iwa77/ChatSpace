@@ -1,0 +1,78 @@
+.chat-main{
+  background-color: #fafafa;
+  width: calc(100vw - 300px);
+  float: right;
+  height:100vh;
+
+  &__header{
+    width: calc(100vw - 300px);
+    background-color: $base-color;
+    border-bottom: solid #eeeeee;
+    height: 15%;
+
+    h1{
+      padding: 51px 0 15px 40px;
+      font-size: 20px;
+      color: #333333;
+    }
+    h2 {
+      padding-left: 40px;
+      color: #999999;
+      font-size: 12px;
+    }
+    .edit-btn{
+      height: 40px;
+      position: absolute;
+      top: 44px;
+      right: 40px;
+      padding: 0 20px;
+      background-color: $base-color;    
+      border-color: $accent-color;
+    }
+    
+  }
+
+  &__content{
+    padding: 46px 40px 0 40px;
+ 
+    &__name{
+      font-size: 16px; 
+      margin-right: 10px;  
+      @include font-decoration;
+    }
+    &__create-time{
+      font-size: 12px;
+      @include font-decoration;
+    }
+    &__message{
+      padding-bottom: 40px;
+      font-size: 14px;
+      display: block;
+    }
+
+   }
+
+  &__input{
+    background-color: #aaaaaa;
+    padding: 20px 40px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - 300px);
+    
+    .message-box{
+      height: 50px;
+      background-color: $base-color;
+      width: calc(100vw - 465px);
+    }
+    .send-btn{
+      height: 50px;
+      width: 70px;
+      margin: 0 40px 0 15px;
+      background-color: $accent-color;  
+      border: none;
+    }
+
+  }
+
+}
+  

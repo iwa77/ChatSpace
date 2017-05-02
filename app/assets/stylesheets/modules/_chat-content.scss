@@ -1,0 +1,40 @@
+.chat-content{
+  float: left;
+  background-color: #2f3e51;
+  width: 300px;
+  height: 100vh;
+
+  &__user{
+    height: 15vh;
+    background: #253141;
+
+    h1{
+      font-size: 16px;
+      font-weight: bold;
+      color: $base-color;
+      padding: 51px 0 0 20px;
+      display: inline-block;
+    }
+
+    &_first-icon{
+      color: $base-color;
+      margin: 0 10px;
+    }
+    &_second-icon{
+      color: $base-color;
+    }
+  }
+
+  &__group{
+    color: $base-color;
+
+    .group-name{
+      margin: 20px 20px 5px 20px;
+      font-size: 15px;
+    }
+    .group-message{
+      margin:0 20px 20px 20px ;
+      font-size: 11px;
+    }
+  }
+}
