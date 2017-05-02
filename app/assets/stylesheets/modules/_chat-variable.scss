@@ -1,2 +1,7 @@
 $base-color: #ffffff; 
 $accent-color: #38aef0;
+
+@mixin font-decoration{
+  display: inline-block;
+  color: #434a54;
+}
