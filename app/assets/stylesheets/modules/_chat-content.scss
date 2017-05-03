@@ -16,11 +16,7 @@
       display: inline-block;
     }
 
-    &_first-icon{
-      color: $base-color;
-      margin: 0 10px;
-    }
-    &_second-icon{
+    .fa{
       color: $base-color;
     }
   }
