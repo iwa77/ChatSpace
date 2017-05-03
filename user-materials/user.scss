@@ -3,7 +3,7 @@
     width: 980px;
     margin: 60px auto;
     padding: 60px;
-    background-color: $base-color;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
 
@@ -23,28 +23,28 @@
       margin-bottom: 10px;
       letter-spacing: 3px;
       font-size: 40px;
-      font-weight: $font-weight-pattern;
+      font-weight: 200;
 
       &:after {
         content: '';
         display: block;
         width: 60px;
         margin-top: 5px;
-        border-bottom: 1px solid $accent-color;
+        border-bottom: 1px solid #38aef0;
       }
     }
 
     h5 {
       margin-bottom: 20px;
-      font-size: $font-base;
-      font-weight: $font-weight-pattern;
+      font-size: 14px;
+      font-weight: 200;
     }
 
     .btn {
       margin-top: 20px;
-      color: $base-color;
+      color: #fff;
       background-color: #ccc;
-      font-size: $font-base;
+      font-size: 14px;
     }
   }
 
@@ -54,8 +54,8 @@
     .field-label {
       padding: 10px 0;
       letter-spacing: 1px;
-      font-size: $font-base;
-      font-weight: $font-weight-pattern;
+      font-size: 14px;
+      font-weight: 200;
 
       i {
         font-size: 11px;
@@ -85,14 +85,14 @@
   input[type='submit'] {
     float: left;
     margin-top: 20px;
-    color: $base-color;
-    background-color: $accent-color;
+    color: #fff;
+    background-color: #38aef0;
   }
 
   .field-label {
     .field_with_errors {
       display: inline-block;
-      color: $accent-color2;
+      color: #d65f4c;
       font-weight: 400;
     }
   }
@@ -109,7 +109,7 @@
         right: 0;
         bottom: 0;
         width: 5px;
-        background-color: $accent-color2;
+        background-color: #d65f4c;
       }
     }
   }
@@ -123,8 +123,8 @@
 
   h2 {
     margin-bottom: 10px;
-    color: $accent-color2;
-    font-size: $font-base;
+    color: #d65f4c;
+    font-size: 14px;
   }
 
   ul {
