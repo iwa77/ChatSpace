@@ -17,13 +17,9 @@
     }
 
     &_first-icon{
-      color: $base-color;
       margin: 0 10px;
     }
-    &_second-icon{
-      color: $base-color;
-    }
-    .fa-fa.cog{
+    .fa{
       color: $base-color;
     }
   }

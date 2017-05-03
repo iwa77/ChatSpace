@@ -1,11 +1,13 @@
 .chat-content
   .chat-content__user
-    %h1 鈴木イチロー
+    %h1 
+      = current_user.name
     %a.chat-content__user_first-icon
-    %a{href: edit_user_registration_path}
       %i.fa.fa-pencil-square-o
     %a.chat-content__user_second-icon
+    = link_to edit_user_registration_path do
       %i.fa.fa-cog
+      
 
   .chat-content__group
     %ul
