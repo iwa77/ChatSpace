@@ -3,16 +3,17 @@
   .chat-content__user
     %h1 
       = current_user.name
+    = link_to new_group_path do
       %i.fa.fa-pencil-square-o
     = link_to edit_user_registration_path do
       %i.fa.fa-cog
-      
 
   .chat-content__group
     %ul
+    - @groups.each do |group|
       %li
         .group-name
-          グループA
+          = group.name
         .group-message
           発言1
       

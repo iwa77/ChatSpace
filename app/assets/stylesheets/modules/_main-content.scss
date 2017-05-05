@@ -1,6 +1,6 @@
 .chat-main{
   background-color: #fafafa;
-  width: calc(100vw - 315px);
+  width: calc(100vw - 320px);
   float: right;
   height:100vh;
 
@@ -8,6 +8,7 @@
     background-color: $base-color;
     border-bottom: solid #eeeeee;
     height: 15%;
+
 
     h1{
       padding: 51px 0 15px 40px;
@@ -56,7 +57,7 @@
     padding: 20px 40px;
     position: fixed;
     bottom: 0;
-    width: calc(100vw - 315px);
+    width: calc(100vw - 320px);
     
     .message-box{
       height: 50px;

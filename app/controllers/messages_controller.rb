@@ -1,6 +1,7 @@
 class MessagesController < ApplicationController
 
-def index
-end
+  def index
+    @groups = Group.all
+  end
 
 end
