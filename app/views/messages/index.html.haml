@@ -8,29 +8,14 @@
     = link_to edit_user_registration_path do
       %i.fa.fa-cog
 
-  .chat-content__group
-    %ul
-    - @groups.each do |group|
-      %li
-        .group-name
-          = group.name
-        .group-message
-          発言1
-      
-.chat-main
-  .chat-main__header
-    %h1 全日本選抜
-    %h2 落合、野茂
-    %input.edit-btn{ type: :submit, value: "Edit" }
-  .chat-main__content
-    .message
-      .chat-main__content__name
-        中田英寿
-      .chat-main__content__create-time
-        2017/1/1 11:11:11
-      .chat-main__content__message
-        サッカーサッカーサッカー 
-  .chat-main__input
-    %input.message-box{ type: :text }
-    %i.fa.fa-picture-o
-    %input.send-btn{ type: :submit, value: "send" }
+  
+    .chat-content__group
+      %ul
+      - @groups.each do |group|
+        = link_to group_path(group) do
+          %li
+            .group-name
+              = group.name
+            .group-message
+              発言1
+              
