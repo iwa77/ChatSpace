@@ -17,7 +17,7 @@ class GroupsController < ApplicationController
   end
     
   def show
-    @groups = Group.all
+    @groups = current_user.groups
     @group = Group.find(params[:id])
     @users = @group.users
   end

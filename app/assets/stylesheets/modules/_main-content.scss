@@ -1,13 +1,13 @@
 .chat-main{
   background-color: #fafafa;
-  width: calc(100vw - 320px);
+  width: calc(100vw - 300px);
   float: right;
   height:100vh;
 
   &__header{
     background-color: $base-color;
     border-bottom: solid #eeeeee;
-    height: 15%;
+    height: 15vh;
 
 
     h1{
@@ -34,6 +34,8 @@
 
   &__content{
     padding: 46px 40px 0 40px;
+    overflow-y: scroll;
+    height: calc(85vh - 136px);
  
     &__name{
       font-size: 16px; 
@@ -57,7 +59,8 @@
     padding: 20px 40px;
     position: fixed;
     bottom: 0;
-    width: calc(100vw - 320px);
+    width: calc(100vw - 300px);
+    
     
     .message-box{
       height: 50px;

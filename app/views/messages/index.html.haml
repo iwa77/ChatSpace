@@ -9,13 +9,13 @@
       %i.fa.fa-cog
 
   
-    .chat-content__group
-      %ul
-      - @groups.each do |group|
-        = link_to group_path(group) do
-          %li
-            .group-name
-              = group.name
-            .group-message
-              発言1
+  .chat-content__group
+    %ul
+    - @groups.each do |group|
+      = link_to group_path(group) do
+        %li
+          .group-name
+            = group.name
+          .group-message
+            発言1
               
