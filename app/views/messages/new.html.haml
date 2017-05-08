@@ -1,4 +1,3 @@
-= render 'layouts/flash'
 .chat-content
   .chat-content__user
     %h1 
@@ -9,15 +8,7 @@
       %i.fa.fa-cog
 
   .chat-content__group
-    %ul
-    - @groups.each do |group|
-      = link_to new_group_message_path(group) do 
-        %li
-          .group-name
-            = group.name
-          .group-message
-            発言
-  
+  = render partial: 'group', collection: @groups
 .chat-main
   .chat-main__header
     %h1

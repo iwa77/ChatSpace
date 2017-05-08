@@ -5,6 +5,7 @@ class MessagesController < ApplicationController
   end
 
   def new
+    @groups = current_user.groups
     @group = Group.find(params[:group_id])
     @users = @group.users
   end

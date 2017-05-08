@@ -8,9 +8,9 @@ class GroupsController < ApplicationController
 
   def create
     group = Group.new(post_params)
-    if  group.save
+   if group.save
      redirect_to new_group_message_path(group), notice: 'グループを作成しました'
-    else
+   else
      flash.now[:alert] = 'グループの作成に失敗しました'
      render :new
     end
@@ -20,9 +20,9 @@ class GroupsController < ApplicationController
   end
 
   def update
-    if  @group.save
+   if @group.save
      redirect_to new_group_message_path(@group), notice: 'グループを編集しました'
-    else 
+   else 
      flash.now[:alert] = 'グループの編集に失敗しました'
      render :new
     end
