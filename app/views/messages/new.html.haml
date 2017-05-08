@@ -13,9 +13,12 @@
     - @groups.each do |group|
       = link_to new_group_message_path(group) do 
         %li
+
           .group-name
             = group.name
+            
           .group-message
+
             発言
   
 .chat-main

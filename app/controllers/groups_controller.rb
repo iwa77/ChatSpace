@@ -10,7 +10,7 @@ class GroupsController < ApplicationController
      redirect_to new_group_message_path(group), notice: 'グループを作成しました'
     else
      flash.now[:alert] = 'グループの作成に失敗しました'
-    render :new
+     render :new
     end
   end
     
@@ -24,7 +24,7 @@ class GroupsController < ApplicationController
      redirect_to new_group_message_path(group), notice: 'グループを編集しました'
     else 
      flash.now[:alert] = 'グループの編集に失敗しました'
-    render :new
+     render :new
     end
   end
 
