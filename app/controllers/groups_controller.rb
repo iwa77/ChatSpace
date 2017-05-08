@@ -1,4 +1,6 @@
 class GroupsController < ApplicationController
+
+  before_action :set_group, only: [:edit, :update]
  
   def new
     @group = Group.new
@@ -15,13 +17,11 @@ class GroupsController < ApplicationController
   end
     
   def edit
-    @group = Group.find(params[:id])
   end
 
   def update
-    group = Group.new(post_params)
-    if  group.save
-     redirect_to new_group_message_path(group), notice: 'グループを編集しました'
+    if  @group.save
+     redirect_to new_group_message_path(@group), notice: 'グループを編集しました'
     else 
      flash.now[:alert] = 'グループの編集に失敗しました'
      render :new
@@ -32,5 +32,9 @@ class GroupsController < ApplicationController
 
   def post_params
     params.require(:group).permit(:name, {user:{ids:[]}})
+  end
+
+  def set_group
+    @group = Group.find(params[:id])
   end
 end
