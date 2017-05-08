@@ -2,7 +2,6 @@ class MessagesController < ApplicationController
   before_action :groups
 
   def index
-  	
   end
 
   def new
