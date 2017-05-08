@@ -11,12 +11,12 @@
   .chat-content__group
     %ul
     - @groups.each do |group|
-      = link_to group_path(group) do
+      = link_to new_group_message_path(group) do 
         %li
           .group-name
             = group.name
           .group-message
-            発言1
+            発言
   
 .chat-main
   .chat-main__header
@@ -82,6 +82,8 @@
 
   .chat-main__input
     %input.message-box{ type: :text }
+
     %i.fa.fa-picture-o
+    
     %input.send-btn{ type: :submit, value: "send" }
  
