@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
   def index
     @groups = current_user.groups.order(created_at: :DESC)
     @group = Group.find(params[:group_id])
-    @users = @group.users 
+    @users = @group.users
     @messages = @group.messages.order(created_at: :DESC).includes(:user)
     @message = Message.new
   end
@@ -18,10 +18,10 @@ class MessagesController < ApplicationController
     end
   end
 
-    private
+  private
 
-    def message_params
+  def message_params
       params.require(:message).permit(:body, :image).merge(group_id: params[:group_id])
-    end
+  end
 
 end
