@@ -21,60 +21,10 @@
   .chat-main__content
   
     .message_list
-      .message
-        .chat-main__content__name
-          中田英寿  
-        .chat-main__content__create-time
-          2017/1/1 11:11:11
-        .chat-main__content__message
-          サッカーサッカーサッカー 
-      .message
-        .chat-main__content__name
-          中田英寿  
-        .chat-main__content__create-time
-          2017/1/1 11:11:11
-        .chat-main__content__message
-          サッカーサッカーサッカー 
-      .message
-        .chat-main__content__name
-          中田英寿  
-        .chat-main__content__create-time
-          2017/1/1 11:11:11
-        .chat-main__content__message
-          サッカーサッカーサッカー 
-      .message
-        .chat-main__content__name
-          中田英寿  
-        .chat-main__content__create-time
-          2017/1/1 11:11:11
-        .chat-main__content__message
-          サッカーサッカーサッカー 
-      .message
-        .chat-main__content__name
-          中田英寿  
-        .chat-main__content__create-time
-          2017/1/1 11:11:11
-        .chat-main__content__message
-          サッカーサッカーサッカー 
-      .message
-        .chat-main__content__name
-          中田英寿  
-        .chat-main__content__create-time
-          2017/1/1 11:11:11
-        .chat-main__content__message
-          サッカーサッカーサッカー 
-      .message
-        .chat-main__content__name
-          中田英寿  
-        .chat-main__content__create-time
-          2017/1/1 11:11:11
-        .chat-main__content__message
-          サッカーサッカーサッカー 
-
+      = render partial: 'message', collection: @messages
+      
   .chat-main__input
-    %input.message-box{ type: :text }
-
-    %i.fa.fa-picture-o
-    
-    %input.send-btn{ type: :submit, value: "send" }
- 
+    = form_for [@group, @message], html: { class: "form js-message" } do |f|
+      = f.text_field :body, class: "message-box", placeholder: 'メッセージを入力してください'
+      %i.fa.fa-picture-o
+      = f.submit "Send", class: "send-btn"
