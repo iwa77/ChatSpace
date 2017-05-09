@@ -18,19 +18,27 @@
 
     .fa{
       color: $base-color;
+      display: inline-block;
     }
   }
 
   &__group{
     color: $base-color;
+    height: 85vh;
 
+    li {
+      color: #2f3e51;
+    }
+    
     .group-name{
       margin: 20px 20px 5px 20px;
       font-size: 15px;
+      color: $base-color;
     }
     .group-message{
       margin:0 20px 20px 20px ;
       font-size: 11px;
+      color: $base-color;
     }
   }
 }

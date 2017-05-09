@@ -5,10 +5,9 @@
   height:100vh;
 
   &__header{
-    width: calc(100vw - 300px);
     background-color: $base-color;
     border-bottom: solid #eeeeee;
-    height: 15%;
+    height: 15vh;
 
     h1{
       padding: 51px 0 15px 40px;
@@ -34,6 +33,8 @@
 
   &__content{
     padding: 46px 40px 0 40px;
+    overflow-y: scroll;
+    height: calc(85vh - 136px);
  
     &__name{
       font-size: 16px; 
@@ -62,7 +63,7 @@
     .message-box{
       height: 50px;
       background-color: $base-color;
-      width: calc(100vw - 465px);
+      width: calc(100vw - 500px);
     }
     .send-btn{
       height: 50px;
