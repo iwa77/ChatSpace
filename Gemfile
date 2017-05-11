@@ -20,6 +20,7 @@ end
 
 group :test do
   gem 'faker'
+  gem 'rails-controller-testing'
 end
 
 group :development do
