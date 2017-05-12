@@ -16,17 +16,18 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'factory_girl_rails', "~> 4.4.1"
+  gem 'rails-controller-testing'
+  gem 'faker'
+  gem 'pry-rails'
 end
 
 group :test do
-  gem 'faker'
-  gem 'rails-controller-testing'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem "haml-rails"
   gem 'erb2haml'
   gem 'pry-rails'
 end
+gem "haml-rails"
