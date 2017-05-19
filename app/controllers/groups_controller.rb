@@ -24,7 +24,6 @@ class GroupsController < ApplicationController
   end
 
   def search
-    binding.pry
     @users = User.where('name LIKE(?)', "%#{params[:name]}%")
     render json: @users
   end
