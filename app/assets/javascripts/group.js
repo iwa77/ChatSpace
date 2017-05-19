@@ -5,7 +5,7 @@ $(document).on('turbolinks:load', function() {
       var html =
         `<div class="chat-group-user clearfix">
           <p class="chat-group-user__name">${user.name}</p>
-          <div class="chat-group-user__btn--add" data-user-name='${user.name}' data-user-id='${user.id}'>追加</div>
+          <div class="chat-group-user__btn chat-group-user__btn--add" data-user-name='${user.name}' data-user-id='${user.id}'>追加</div>
         </div>`;
       return html
     };
@@ -16,7 +16,7 @@ $(document).on('turbolinks:load', function() {
         `<div class="chat-group-user clearfix">
           <input type="hidden" name="group[user_ids][]" value="${id}">
           <p class="chat-group-user__name">${name}</p>
-          <a class="chat-group-user__btn--remove" data-user-id='${id}'>削除</a>
+          <a class="chat-group-user__btn chat-group-user__btn--remove" data-user-id='${id}'>削除</a>
         </div>`;
       return html
     };
