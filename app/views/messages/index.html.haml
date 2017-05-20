@@ -26,5 +26,7 @@
   .chat-main__input
     = form_for [@group, @message], html: { class: "form js-message" } do |f|
       = f.text_field :body, class: "message-box", placeholder: 'メッセージを入力してください'
-      %i.fa.fa-picture-o
+      %label.chat-footer__file
+        = f.file_field :image
+        %i.fa.fa-picture-o
       = f.submit "Send", class: "send-btn"
