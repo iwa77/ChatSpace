@@ -12,6 +12,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "font-awesome-rails"
 gem 'devise'
 
+group :development, :production do
+  gem 'fog'
+end
+
 group :development, :test do 
   gem 'byebug'
   gem 'rspec-rails'
@@ -29,5 +33,7 @@ group :development do
   gem 'spring'
   gem 'erb2haml'
   gem 'pry-rails'
+  gem 'carrierwave'
+  gem 'dotenv'
 end
 gem "haml-rails"
