@@ -9,8 +9,8 @@ $(function() {
     var html = {};
     html.name = $('<li class="chat-main__content__name">').append(message.name);
     html.date = $('<li class="chat-main__content__create-time">').append(message.created_at);
-    html.body = $('<li class="chat-main__content__body">').append(message.body)
-    ${insertImage}
+    html.body = $('<li class="chat-main__content__body">').append(message.body);
+      $(insertImage);
     return html;
   }
 
@@ -34,4 +34,5 @@ $(function() {
       alert('メッセージを入力してください');
     });
   });
+
 });
