@@ -7,7 +7,7 @@ $(function() {
     return html;
   }
 
-  $('.js-form').on('submit', function(e) {
+  $('.js-message').on('submit', function(e) {
     e.preventDefault();
     var textField = $('.message-box');
     var formData = new FormData.get()[0];
