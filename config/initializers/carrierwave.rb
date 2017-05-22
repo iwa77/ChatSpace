@@ -15,5 +15,4 @@ CarrierWave.configure do |config|
       config.fog_directory  = 'ggggtesttest'
       config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
   end
-
 end
