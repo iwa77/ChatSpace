@@ -11,7 +11,17 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
   case Rails.env
-  when 'development'
+  when 'production'
+      config.fog_directory  = 'ggggtesttest'
+      config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
+  end
+
+    when 'development'
+      config.fog_directory  = 'ggggtesttest'
+      config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
+  end
+
+    when 'test'
       config.fog_directory  = 'ggggtesttest'
       config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
   end
