@@ -17,7 +17,7 @@ $(function() {
   };
 
   function autoreload() {
-    var lastid = $('.message').last(0).data('id');
+    var lastid = $('.message').last().data('id');
     $.ajax({
       type: 'GET',
       url: './messages', 
@@ -31,10 +31,9 @@ $(function() {
         appendHTML += buildHTML(message);
       });
       $('.message_list').append(appendHTML);
-           // debugger
     })
     .fail(function(message) {
-      console.log('自動更新に失敗しました');
+      alert('自動更新に失敗しました');
     });
   }
 
