@@ -27,7 +27,6 @@ $(function() {
     .done(function(data) {
       var appendHTML = '';
       $.each(data.messages, function(index, message) {
-        console.log(data);
         appendHTML += buildHTML(message);
       });
       $('.message_list').append(appendHTML);
