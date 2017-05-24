@@ -12,6 +12,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "font-awesome-rails"
 gem 'devise'
 
+group :production do
+  gem 'unicorn'
+end
+
 group :development, :production do
   gem 'fog'
 end
