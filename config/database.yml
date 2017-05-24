@@ -13,6 +13,7 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
+  timeout: 6000
   username: root
   password:
   socket: /var/lib/mysql/mysql.sock

@@ -4,8 +4,12 @@ class MessagesController < ApplicationController
     @groups = current_user.groups.order(created_at: :DESC)
     @group = Group.find(params[:group_id])
     @users = @group.users
-    @messages = @group.messages.order(created_at: :DESC).includes(:user)
+    @messages = @group.messages.order(created_at: :ASC).includes(:user)
     @message = Message.new
+      respond_to do |format|
+        format.html
+        format.json {@messages = @group.messages.where('id > ?', params[:lastId])}
+      end
   end
 
   def create
@@ -13,7 +17,7 @@ class MessagesController < ApplicationController
     if @message.save
       respond_to do |format|
         format.html { redirect_to group_messages_path(params[:group_id]), notice: 'メッセージを投稿しました' }
-        format.json { render json: @message }
+        format.json
       end
     else
       flash.now[:alert] = "メッセージを入力してください"

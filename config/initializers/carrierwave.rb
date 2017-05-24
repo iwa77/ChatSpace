@@ -12,17 +12,13 @@ CarrierWave.configure do |config|
   }
   case Rails.env
   when 'production'
-      config.fog_directory  = 'ggggtesttest'
-      config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
-  end
-
-    when 'development'
-      config.fog_directory  = 'ggggtesttest'
-      config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
-  end
-
-    when 'test'
-      config.fog_directory  = 'ggggtesttest'
-      config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
+    config.fog_directory  = 'ggggtesttest'
+    config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
+  when 'development'
+    config.fog_directory  = 'ggggtesttest'
+    config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
+  when 'test'
+    config.fog_directory  = 'ggggtesttest'
+    config.asset_host = 'https://s3.amazonaws.com/ggggtesttest'
   end
 end
